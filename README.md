@@ -13,3 +13,6 @@ Get-AppxPackage -allusers Microsoft.WindowsStore | Foreach
 “$($_.InstallLocation)\AppXManifest.xml”}
 ```
 3. open cmd as admin, and type ```wsreset.exe``` and hit enter
+
+how to get iid from windows script host
+* open cmd as admin, paste ```cscript.exe "%windir%\system32\slmgr.vbs" /dti > c:\iid.txt```
